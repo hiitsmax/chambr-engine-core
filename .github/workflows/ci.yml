@@ -13,8 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: yarn
-          cache-dependency-path: yarn.lock
+          package-manager-cache: false
       - run: corepack enable
       - run: yarn --version
       - run: yarn install --immutable
