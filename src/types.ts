@@ -44,6 +44,8 @@ export type RuntimeState = {
   speaker_outputs: SpeakerOutput[];
   last_user_message?: string;
   turn_trace: string[];
+  director_plan_history?: unknown[];
+  theatrical_contract_version?: number;
 };
 
 export type RoomState = {
